@@ -17,7 +17,7 @@
 <body>
 
 	<!-- if the project is on GitHub, add a fork me button! -->
-	<a class='forkme' href='https://github.com/cfenzo/ractive-transitions-velocity.js'>Fork me on GitHub</a>
+	<a class='forkme' href='https://github.com/cfenzo/ractive-transitions-velocity'>Fork me on GitHub</a>
 
 	<header>
 		<h1>Ractive.js velocity transition plugin</h1>
@@ -28,7 +28,8 @@
 	</header>
 
 	<main>
-		<p>TODO A description of the plugin goes here...</p>
+		<p>Utilize <a href="http://velocityjs.org">Velocity.js</a> animation goodness as <a href="http://ractivejs.org">Ractive.js</a> transitions.</p>
+        <p>If <a href="http://julian.com/research/velocity/#uiPack">Velocity.js UI Pack</a> is added along with Velocity.js (optional, but recommended), all the packaged effects will be available as transitions.</p>
 
 		<div id='demo' class='clearfix'></div>
 
@@ -43,11 +44,16 @@
 
 	<!-- Demo template -->
 	<script id='demo-template' type='text/ractive'>
-		<p intro="transition.whirlIn">transition.whirlIn</p>
-		<p intro="transition.bounceLeftIn:3000">transition.bounceLeftIn:3000</p>
-		<p intro="velocity:'transition.flipBounceXIn',{duration:3000}">velocity:'transition.flipBounceXIn',{duration:3000}</p>
-		<p intro="velocity:'transition.fadeIn',4000">velocity:'transition.fadeIn',4000</p>
-		<p intro="velocity:{opacity:[ 1, 'easeInSine', 0 ]},1000">velocity:{opacity:[ 1, 'easeInSine', 0 ]},1000</p>
+<h3>Roll your own transitions with full support for Velocity properties and options</h3>
+<p intro="velocity:{opacity:[ 1, 'easeInSine', 0 ]},1000">intro="velocity:{opacity:[ 1, 'easeInSine', 0 ]},1000"</p>
+<p intro="velocity:{translateX: [ 0, [3], 500 ],opacity:[ 1, [8], 0 ]},1000">intro="velocity:{translateX: [ 0, [3], 500 ],opacity:[ 1, [8], 0 ]},1000"</p>
+
+<h3>Using the effects from the UI Pack</h3>
+<p intro="velocity:'transition.flipBounceXIn',{duration:3000}">intro="velocity:'transition.flipBounceXIn',{duration:3000}"</p>
+<p intro="velocity:'transition.fadeIn',4000">intro="velocity:'transition.fadeIn',4000"</p>
+<h4>Bonus: all UI Pack effects is added as transitions"</h4>
+<p intro="transition.whirlIn">intro="transition.whirlIn"</p>
+<p intro="transition.bounceLeftIn:3000">intro="transition.bounceLeftIn:3000"</p>
 	</script>
 
 	<!-- Dependencies -->
