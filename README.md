@@ -49,6 +49,7 @@ If you add the [UI Pack](http://julian.com/research/velocity/#uiPack), you can u
 ## Credits
 
 @julianshapiro for creating [Velocity.js](http://velocityjs.org)
+
 @Rich-Harris for creating [Ractive.js](http://ractivejs.org)
 
 
