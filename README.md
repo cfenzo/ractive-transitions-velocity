@@ -2,14 +2,17 @@
 
 *Find more Ractive.js plugins at [ractivejs.org/plugins](http://ractivejs.org/plugins)*
 
-[See the demo here.](TODO)
+[See the demo here.](http://cfenzo.github.io/ractive-transitions-velocity)
 
 ## Usage
 
-Include this file on your page below Ractive, e.g:
+Include this file on your page below Ractive, jQuery, velocity and (optional) velocity.ui e.g:
 
 ```html
 <script src='lib/ractive.js'></script>
+<script src='lib/jquery.js'></script>
+<script src='lib/jquery.velocity.js'></script>
+<script src='lib/velocity.ui.js'></script>
 <script src='lib/ractive-transitions-velocity.js'></script>
 ```
 
