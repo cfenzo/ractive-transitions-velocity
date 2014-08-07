@@ -28,8 +28,8 @@
 	</header>
 
 	<main>
-		<p>Utilize <a href="http://velocityjs.org">Velocity.js</a> animation goodness as <a href="http://ractivejs.org">Ractive.js</a> transitions.</p>
-        <p>If <a href="http://julian.com/research/velocity/#uiPack">Velocity.js UI Pack</a> is added along with Velocity.js (optional, but recommended), all the packaged effects will be available as transitions.</p>
+        <p>This plugin let you use <a href="http://velocityjs.org">Velocity.js</a> to make Ractive.js transitions, with full support for all of Velocity.js' <a href="http://julian.com/research/velocity/#properties">properties</a> and <a href="http://julian.com/research/velocity/#easing">options</a> (except complete, which is used by the plugin itself)</p>
+        <p>And if you add the <a href="http://julian.com/research/velocity/#uiPack">Velocity.js UI Pack</a> aling with Velocity.js (optional, but recommended), all the packaged effects will be readily available as transitions too.</p>
 
 		<div id='demo' class='clearfix'></div>
 
@@ -44,14 +44,15 @@
 
 	<!-- Demo template -->
 	<script id='demo-template' type='text/ractive'>
-<h3>Roll your own transitions with full support for Velocity properties and options</h3>
+<h3>Roll your own transitions by setting <a href="http://julian.com/research/velocity/#properties">properties</a> and <a href="http://julian.com/research/velocity/#easing">options</a></h3>
 <p intro="velocity:{opacity:[ 1, 'easeInSine', 0 ]},1000">intro="velocity:{opacity:[ 1, 'easeInSine', 0 ]},1000"</p>
 <p intro="velocity:{translateX: [ 0, [3], 500 ],opacity:[ 1, [8], 0 ]},1000">intro="velocity:{translateX: [ 0, [3], 500 ],opacity:[ 1, [8], 0 ]},1000"</p>
 
 <h3>Using the effects from the UI Pack</h3>
 <p intro="velocity:'transition.flipBounceXIn',{duration:3000}">intro="velocity:'transition.flipBounceXIn',{duration:3000}"</p>
 <p intro="velocity:'transition.fadeIn',4000">intro="velocity:'transition.fadeIn',4000"</p>
-<h4>Bonus: all UI Pack effects is added as transitions"</h4>
+
+<h4>Bonus: when available, all UI Pack effects is added as Ractive transitions</h4>
 <p intro="transition.whirlIn">intro="transition.whirlIn"</p>
 <p intro="transition.bounceLeftIn:3000">intro="transition.bounceLeftIn:3000"</p>
 	</script>
