@@ -1,0 +1,23 @@
+{
+	"name": "ractive-transitions-velocity",
+	"version": "0.1.0",
+	"author": "Jens Anders Bakke",
+	"main": "ractive-transitions-velocity.js",
+	"dependencies": {
+		"ractive": "^0.5.4",
+		"velocity": "^0.10.1",
+		"jquery": "1.x"
+	},
+	"ignore": [
+		".*",
+		"*.json",
+		"demo",
+		"grunt",
+		"node_modules",
+		"src",
+		"test",
+		"Gruntfile.js",
+		"index.html",
+		"README.md"
+	]
+}

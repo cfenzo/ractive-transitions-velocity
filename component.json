@@ -1,0 +1,16 @@
+{
+	"name": "ractive-transitions-velocity",
+	"repo": "git://github.com/cfenzo/ractive-transitions-velocity.git",
+	"description": "ractive-transitions-velocity",
+	"version": "0.1.0",
+	"keywords": [],
+	"dependencies": {
+		"ractivejs/ractive": "^0.5.4"
+	},
+	"development": {},
+	"license": "MIT",
+	"main": "ractive-transitions-velocity.js",
+	"scripts": [
+		"ractive-transitions-velocity.js"
+	]
+}
