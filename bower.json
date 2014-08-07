@@ -16,8 +16,10 @@
 		"node_modules",
 		"src",
 		"test",
+		"tmp",
 		"Gruntfile.js",
 		"index.html",
-		"README.md"
+		"README.md",
+		"vendor"
 	]
 }
