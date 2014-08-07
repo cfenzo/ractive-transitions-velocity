@@ -48,13 +48,13 @@ If you add the [UI Pack](http://julian.com/research/velocity/#uiPack), you can u
 
 ## Credits
 
-@julianshapiro for creating [Velocity.js](http://velocityjs.org)
+[@julianshapiro](https://github.com/julianshapiro) for creating [Velocity.js](http://velocityjs.org)
 
-@Rich-Harris for creating [Ractive.js](http://ractivejs.org)
+[@Rich-Harris](https://github.com/Rich-Harris) for creating [Ractive.js](http://ractivejs.org)
 
 
 ## License
 
-Copyright (c) 2014 Jens Anders Bakke. Licensed MIT
+Licensed MIT (c) 2014 Jens Anders Bakke. (https://twitter.com/cfenzo)
 
 Created with the [Ractive.js plugin template](https://github.com/ractivejs/plugin-template) for Grunt.
