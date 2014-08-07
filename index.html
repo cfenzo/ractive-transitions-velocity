@@ -44,7 +44,11 @@
 	<!-- Demo template -->
 	<script id='demo-template' type='text/ractive'>
 		<!-- TODO -->
-		<p>This is a demo of the plugin</p>
+		<p intro="transition.whirlIn">transition.whirlIn</p>
+		<p intro="transition.bounceLeftIn:3000">transition.bounceLeftIn (3000ms)</p>
+		<p intro="velocity:'transition.flipBounceXIn',{duration:3000}">transition.flipBounceXIn (syntax2,3000ms)</p>
+		<p intro="velocity:'transition.fadeIn',4000">transition.fadeIn (syntax2,4000ms)</p>
+		<p intro="velocity:{opacity:[ 1, 'easeInSine', 0 ]},1000">animate opacity [ 1, 'easeInSine', 0 ] (1000ms)</p>
 	</script>
 
 	<!-- Dependencies -->

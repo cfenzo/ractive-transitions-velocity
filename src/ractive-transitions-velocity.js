@@ -36,27 +36,50 @@
 
 	// AMD environment
 	if ( typeof define === 'function' && define.amd ) {
-		define([ 'ractive' ], factory );
+		define([ 'ractive', 'jquery' ], factory );
 	}
 
 	// Common JS (i.e. node/browserify)
 	else if ( typeof module !== 'undefined' && module.exports && typeof require === 'function' ) {
-		factory( require( 'ractive' ) );
+		factory( require( 'ractive' ), require('jquery') );
 	}
 
 	// browser global
-	else if ( global.Ractive ) {
-		factory( global.Ractive );
+	else if ( global.Ractive && global.jQuery ) {
+		factory( global.Ractive, global.jQuery );
 	}
 
 	else {
-		throw new Error( 'Could not find Ractive! It must be loaded before the ractive-transitions-velocity plugin' );
+		throw new Error( 'Could not find Ractive or jQuery! It must be loaded before the ractive-transitions-velocity plugin' );
 	}
 
-}( typeof window !== 'undefined' ? window : this, function ( Ractive ) {
+}( typeof window !== 'undefined' ? window : this, function ( Ractive, jQuery ) {
 
 	'use strict';
 
-	/* plugin code goes here */
+	if(!jQuery.Velocity) throw new Error( 'Could not find Velocity! It must be loaded before the ractive-transitions-velocity plugin');
+	var Velocity = jQuery.Velocity;
+
+	function add_transition(fx_name){
+        	Ractive.transitions[fx_name] = function(t, params){
+            		Velocity.animate([t.node],fx_name,t.processParams(params,{complete:t.complete}));
+        	};
+    	}
+	if(Velocity.Sequences){
+    		for(var fx_name in Velocity.Sequences){
+        		if(Velocity.Sequences.hasOwnProperty(fx_name)){
+            			add_transition(fx_name);
+        		}
+    		}
+	}
+	
+	Ractive.transitions.velocity = function(t, props, opts){
+		//params = params.split(',')
+		//params[1] = (/^(\-|\+)?([0-9]+)$/.test(params[1]))?Number(params[1]):params[1];
+		console.log(props,opts);
+		opts = t.processParams(opts);
+		opts.complete = t.complete;
+		Velocity.animate([t.node],props,opts);
+	};
 
 }));
