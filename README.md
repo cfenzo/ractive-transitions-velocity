@@ -32,7 +32,7 @@ You can then roll your own transitions using a [properties](http://julian.com/re
 <p intro="velocity:{translateX: [ 0, [3], 500 ],opacity:[ 1, [8], 0 ]},{duration:1000}">intro="velocity:{translateX: [ 0, [3], 500 ],opacity:[ 1, [8], 0 ]},{duration:1000,loop:2}"</p>
 ````
 
-If you add the [UI Pack](http://julian.com/research/velocity/#uiPack), you can use the names effects instead of properties
+If you add the [UI Pack](http://julian.com/research/velocity/#uiPack), you can use provided effects by their name instead of the properties object
 ```html
 <p intro="velocity:'transition.flipBounceXIn',{duration:3000}">intro="velocity:'transition.flipBounceXIn',{duration:3000}"</p>
 <p intro="velocity:'transition.fadeIn',4000">intro="velocity:'transition.fadeIn',4000"</p>
