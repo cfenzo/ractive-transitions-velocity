@@ -74,9 +74,6 @@
 	}
 	
 	Ractive.transitions.velocity = function(t, props, opts){
-		//params = params.split(',')
-		//params[1] = (/^(\-|\+)?([0-9]+)$/.test(params[1]))?Number(params[1]):params[1];
-		console.log(props,opts);
 		opts = t.processParams(opts);
 		opts.complete = t.complete;
 		Velocity.animate([t.node],props,opts);

@@ -5,7 +5,7 @@ And if you add the <a href="http://julian.com/research/velocity/#uiPack">Velocit
 
 [See the demo here.](http://cfenzo.github.io/ractive-transitions-velocity)
 
-*Find more Ractive.js plugins at [ractivejs.org/plugins](http://ractivejs.org/plugins)*
+*Find more Ractive.js plugins at [docs.ractivejs.org/latest/plugins](http://docs.ractivejs.org/latest/plugins)*
 
 ## Usage
 
@@ -19,7 +19,7 @@ Include this file on your page below [Ractive](http://ractivejs.org), [jQuery](h
 <script src='lib/ractive-transitions-velocity.js'></script>
 ```
 
-Or, if you're using a module loader, require this module:
+Or, if you're using a module loader, require this module after jquery, velocity and (optional) velocity.ui:
 
 ```js
 // requiring the plugin will 'activate' it - no need to use the return value
@@ -29,10 +29,10 @@ require( 'ractive-transitions-velocity' );
 You can then roll your own transitions using a [properties](http://julian.com/research/velocity/#properties) object and (optional) [options](http://julian.com/research/velocity/#easing) object or duration in ms 
 ```html
 <p intro="velocity:{opacity:[ 1, 0 ]},1000">intro="velocity:{opacity:[ 1, 0 ]},1000"</p>
-<p intro="velocity:{translateX: [ 0, [3], 500 ],opacity:[ 1, [8], 0 ]},{duration:1000}">intro="velocity:{translateX: [ 0, [3], 500 ],opacity:[ 1, [8], 0 ]},{duration:1000,loop:2}"</p>
+<p intro="velocity:{translateX: [ 0, [3], 500 ],opacity:[ 1, [8], 0 ]},{duration:1000,loop:2}">intro="velocity:{translateX: [ 0, [3], 500 ],opacity:[ 1, [8], 0 ]},{duration:1000,loop:2}"</p>
 ````
 
-If you add the [UI Pack](http://julian.com/research/velocity/#uiPack), you can use provided effects by their name instead of the properties object
+If you add the [UI Pack](http://julian.com/research/velocity/#uiPack), you can use the provided effects by their name instead of the properties object
 ```html
 <p intro="velocity:'transition.flipBounceXIn',{duration:3000}">intro="velocity:'transition.flipBounceXIn',{duration:3000}"</p>
 <p intro="velocity:'transition.fadeIn',4000">intro="velocity:'transition.fadeIn',4000"</p>
